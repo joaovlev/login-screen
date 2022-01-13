@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar/Registrar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="login_screen">
+        <div class="form_box">
+            <div class="button_box">
+                <div id="button"></div>
+                <button type="button" class="login_button" onclick="entrar()">Entrar</button>
+                <button type="button" class="register_button" onclick="registrar()">Registrar</button>
+            </div>
+            <form method="post" id="login" class="input_group">
+                <input type="text" class="user_field" placeholder="Usuário" required>
+                <input type="text" class="password_field" placeholder="Senha" required>
+                <input type="checkbox" class="checkbox"><span>Lembrar senha</span>
+                <button type="submit" class="submit_button">Entrar</button>
+            </form>
+            <form method="post" id="register" class="input_group">
+                <input type="text" class="user_field" placeholder="Usuário" required>
+                <input type="email" class="user_field" placeholder="Email" required>
+                <input type="text" class="password_field" placeholder="Senha" required>
+                <input type="checkbox" class="checkbox"><span>Eu li e concordo com os termos de uso</span>
+                <button type="submit" class="submit_button">Registrar</button>
+            </form>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
